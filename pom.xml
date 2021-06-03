@@ -12,11 +12,7 @@
     <artifactId>sec4</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sec1</name>
-
-
-    <properties>
-        <java.version>13</java.version>
-    </properties>
+    
 
     <dependencies>
         <dependency>
