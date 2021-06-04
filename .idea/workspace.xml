@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c857e5-2c09-4f5e-b172-85e5c361088b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/CorsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/deploy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sec4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sec4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/model/Day.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/model/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/model/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/model/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/repository/DayRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/repository/NoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/repository/NoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/Security4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/Security4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/model/Day.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/model/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/model/MyUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/model/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/model/Note.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/repository/DayRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/repository/MyUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/repository/MyUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/repository/NoteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/repository/NoteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/CustomAuthencationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/CustomAuthencationProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/service/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/service/CustomUserDetailsService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622748173674</updated>
-      <workItem from="1622748176529" duration="8908000" />
+      <workItem from="1622748176529" duration="31793000" />
     </task>
     <servers />
   </component>
@@ -111,49 +131,53 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1622758567158" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1622757430075">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622765000606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622757430075" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1622757430074">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1622765000606" />
+    <state width="1493" height="134" key="GridCell.Tab.0.bottom" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622757430074" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1622757430074">
+    <state width="1493" height="134" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state width="1493" height="134" key="GridCell.Tab.0.center" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622757430074" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1622757430075">
+    <state width="1493" height="134" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state width="1493" height="134" key="GridCell.Tab.0.left" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622757430075" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1622757430075">
+    <state width="1493" height="134" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state width="1493" height="134" key="GridCell.Tab.0.right" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622757430075" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1622757430075">
+    <state width="1493" height="134" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state width="1493" height="134" key="GridCell.Tab.1.bottom" timestamp="1622788019144">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622757430075" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1622757430075">
+    <state width="1493" height="134" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622788019144" />
+    <state width="1493" height="134" key="GridCell.Tab.1.center" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622757430075" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1622757430075">
+    <state width="1493" height="134" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state width="1493" height="134" key="GridCell.Tab.1.left" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622757430075" />
-    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1622748216468">
+    <state width="1493" height="134" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state width="1493" height="134" key="GridCell.Tab.1.right" timestamp="1622788019143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1622748216468" />
+    <state width="1493" height="134" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622788019143" />
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1622764737430">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1622764737430" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1622756740518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622756740518" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622758301433">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622785994863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622758301433" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622785994863" />
   </component>
 </project>
