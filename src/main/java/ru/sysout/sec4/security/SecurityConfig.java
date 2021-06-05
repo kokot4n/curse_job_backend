@@ -58,6 +58,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
                 httpServletResponse.addHeader(e.getClass().getSimpleName(), e.getMessage());
                 httpServletResponse.setStatus(401);
+                httpServletResponse.addHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+                httpServletResponse.addHeader("Access-Control-Allow-Credentials", "true");
             }
         };
     }
@@ -68,6 +70,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException, ServletException {
                 httpServletResponse.addHeader(e.getClass().getSimpleName(), e.getMessage());
                 httpServletResponse.setStatus(403);
+                httpServletResponse.addHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+                httpServletResponse.addHeader("Access-Control-Allow-Credentials", "true");
             }
         };
     }
@@ -78,6 +82,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
                 httpServletResponse.addHeader(e.getClass().getSimpleName(), e.getMessage());
                 httpServletResponse.setStatus(401);
+                httpServletResponse.addHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+                httpServletResponse.addHeader("Access-Control-Allow-Credentials", "true");
             }
         };
     }
