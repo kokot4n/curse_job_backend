@@ -45,8 +45,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new AuthenticationSuccessHandler() {
             @Override
             public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
-                httpServletResponse.getWriter().append("OK");
                 httpServletResponse.setStatus(200);
+                httpServletResponse.addHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+                httpServletResponse.addHeader("Access-Control-Allow-Credentials", "true");
             }
         };
     }
@@ -55,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new AuthenticationFailureHandler() {
             @Override
             public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
-                httpServletResponse.getWriter().append("Authentication failure");
+                httpServletResponse.addHeader(e.getClass().getSimpleName(), e.getMessage());
                 httpServletResponse.setStatus(401);
             }
         };
@@ -65,7 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new AccessDeniedHandler() {
             @Override
             public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException, ServletException {
-                httpServletResponse.getWriter().append("Access denied");
+                httpServletResponse.addHeader(e.getClass().getSimpleName(), e.getMessage());
                 httpServletResponse.setStatus(403);
             }
         };
@@ -75,7 +76,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new AuthenticationEntryPoint() {
             @Override
             public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
-                httpServletResponse.getWriter().append("Not authenticated");
+                httpServletResponse.addHeader(e.getClass().getSimpleName(), e.getMessage());
                 httpServletResponse.setStatus(401);
             }
         };
@@ -89,15 +90,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
-      auth.userDetailsService(userDetailsService);
-      //  auth.authenticationProvider(customAuthencationProvider);
+        auth.userDetailsService(userDetailsService);
+        auth.authenticationProvider(customAuthencationProvider);
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/**").permitAll()
+                .antMatchers("/user/").authenticated()
+                .antMatchers(HttpMethod.OPTIONS, "/user/note").permitAll()
+                .antMatchers("/admin/").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -106,6 +109,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .exceptionHandling()
                 .accessDeniedHandler(accessDeniedHandler())
-                .authenticationEntryPoint(authenticationEntryPoint());
+                .and()
+                .httpBasic()
+                .authenticationEntryPoint(authenticationEntryPoint())
+                .and()
+                .cors();
     }
 }

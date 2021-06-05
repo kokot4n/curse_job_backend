@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c857e5-2c09-4f5e-b172-85e5c361088b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/CorsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/CorsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sysout/sec4/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/controller/CorsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/controller/CorsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sysout/sec4/security/SecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +33,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_example: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_example: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="myuser: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -42,6 +78,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -50,7 +87,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../curse/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +117,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:spring" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -97,7 +139,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622748173674</updated>
-      <workItem from="1622748176529" duration="32991000" />
+      <workItem from="1622748176529" duration="33644000" />
+      <workItem from="1622795975077" duration="1192000" />
+      <workItem from="1622908903192" duration="18355000" />
     </task>
     <servers />
   </component>
@@ -105,46 +149,50 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622758567158">
+    <state x="393" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622916887858">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1622758567158" />
+    <state x="393" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1622916887858" />
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622765000606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1622765000606" />
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1622793169301">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1622908988791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1622793169301">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622908988791" />
+    <state width="1493" height="72" key="GridCell.Tab.0.bottom" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1622793169301">
+    <state width="1493" height="72" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.0.center" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1622793169301">
+    <state width="1493" height="72" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.0.left" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.1.bottom" timestamp="1622793169301">
+    <state width="1493" height="72" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.0.right" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.1.center" timestamp="1622793169301">
+    <state width="1493" height="72" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.1.bottom" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.1.left" timestamp="1622793169301">
+    <state width="1493" height="72" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.1.center" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
-    <state width="1493" height="224" key="GridCell.Tab.1.right" timestamp="1622793169301">
+    <state width="1493" height="72" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.1.left" timestamp="1622929566116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622793169301" />
+    <state width="1493" height="72" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
+    <state width="1493" height="72" key="GridCell.Tab.1.right" timestamp="1622929566116">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="72" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622929566116" />
     <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1622764737430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

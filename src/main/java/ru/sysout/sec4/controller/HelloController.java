@@ -4,6 +4,7 @@ package ru.sysout.sec4.controller;
 import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -21,7 +22,6 @@ import java.sql.Date;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class HelloController {
 
     @Autowired
@@ -50,20 +50,46 @@ public class HelloController {
     public ResponseEntity notes(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
-        //return noteDao.findByMyuser(userDao.findByLogin(currentPrincipalName));
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.set("Access-Control-Allow-Origin",
+                "http://localhost:4200");
+        responseHeaders.add("Access-Control-Allow-Credentials",
+                "true");
         return ResponseEntity.ok()
-                .body(noteDao.findAll());
+                .headers(responseHeaders)
+                .body(noteDao.findByMyuser(userDao.findByLogin(currentPrincipalName)));
+        //return ResponseEntity.ok().body(noteDao.findAll());
     }
 
     @PostMapping("user/note")
     public ResponseEntity<Note> createNote(@RequestBody Note note){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
-        //note.setMyuser(userDao.findByLogin(currentPrincipalName));
-        note.setMyuser(userDao.findByLogin("admin"));
+        note.setMyuser(userDao.findByLogin(currentPrincipalName));
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.set("Access-Control-Allow-Origin",
+                "http://localhost:4200");
+        responseHeaders.add("Access-Control-Allow-Credentials",
+                "true");
+        //note.setMyuser(userDao.findByLogin("admin"));
         noteDao.save(note);
         return ResponseEntity.ok()
+                .headers(responseHeaders)
                 .body(note);
+    }
+
+    @RequestMapping(value="user/note", method = RequestMethod.OPTIONS)
+    ResponseEntity<?> singularOptions()
+    {
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.set("Access-Control-Allow-Origin",
+                "http://localhost:4200");
+        responseHeaders.add("Access-Control-Allow-Credentials", "true");
+        return ResponseEntity
+                .ok()
+                .headers(responseHeaders)
+                .allow(HttpMethod.GET, HttpMethod.DELETE, HttpMethod.PUT, HttpMethod.OPTIONS)
+                .build();
     }
 
     @PostMapping("/user")
