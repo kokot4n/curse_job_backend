@@ -18,6 +18,7 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -48,6 +49,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             @Override
             public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
                 httpServletResponse.setStatus(200);
+                httpServletResponse.setHeader("Set-Cookie", "HttpOnly; SameSite=strict");
             }
         };
     }
@@ -97,6 +99,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
+                .addFilterAfter(new CustomFilter(), BasicAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/user").permitAll()
                 .antMatchers("/admin/").hasRole("ADMIN")
