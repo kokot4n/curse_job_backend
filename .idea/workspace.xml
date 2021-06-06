@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c857e5-2c09-4f5e-b172-85e5c361088b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sec4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sec4.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +144,7 @@
       <workItem from="1622748176529" duration="33644000" />
       <workItem from="1622795975077" duration="1192000" />
       <workItem from="1622908903192" duration="20678000" />
-      <workItem from="1622977609347" duration="12771000" />
+      <workItem from="1622977609347" duration="13013000" />
     </task>
     <servers />
   </component>
