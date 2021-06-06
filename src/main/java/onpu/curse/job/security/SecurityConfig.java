@@ -49,7 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             @Override
             public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
                 httpServletResponse.setStatus(200);
-                httpServletResponse.setHeader("Set-Cookie", "HttpOnly; SameSite=strict");
             }
         };
     }
