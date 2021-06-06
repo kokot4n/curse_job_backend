@@ -8,10 +8,10 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>ru.sysout</groupId>
-    <artifactId>sec4</artifactId>
+    <groupId>onpu.curse</groupId>
+    <artifactId>job</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sec1</name>
+    <name>job</name>
 
 
     <dependencies>
@@ -73,10 +73,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>9</source>
-                    <target>9</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
